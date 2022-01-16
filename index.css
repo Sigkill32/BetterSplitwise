@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+h1,
+h4,
+p {
+  color: #dce0e3;
+}
+
+button {
+  cursor: pointer;
+  font-size: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.global-input {
+  background-color: black;
+  border: none;
+  outline: none;
+  color: #dce0e3;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.global-button {
+  background-color: #dce0e3;
+  border: none;
+  color: #3d434b;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  background-color: #3d434b;
+  padding: 2em;
+  min-height: 100vh;
+  min-width: 30%;
+  border-radius: 5px;
+}
+
+.app-body {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.user-input-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black !important;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.user-input-container input {
+  background-color: black;
+  border: none;
+  outline: none;
+  color: #dce0e3;
+  padding: 0 1em;
+  width: 100%;
+}
+
+.user-input-container input::placeholder {
+  color: #dce0e3;
+}
+
+.user-input-container button {
+  background-color: #dce0e3;
+  border: none;
+  height: 25px;
+  width: 50px;
+  color: #3d434b;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.people-container {
+  max-height: 45vh;
+  overflow: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.person-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.name {
+  margin-bottom: 5px;
+  width: 50%;
+}
+
+.contribution {
+  margin-bottom: 5px;
+  width: 40%;
+}
+
+.hidden {
+  display: none;
+}
+
+.ballance-button {
+  padding: 5px;
+}
+
+.split-ways-container {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.split-by-person {
+  margin-top: 10px;
+  height: 15vh;
+  overflow: auto;
+}
+
+.highlight {
+  color: #ea5f8e;
+}
+
+.split-by-person .balance-item {
+  margin-bottom: 8px;
+}

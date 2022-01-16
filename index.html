@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Better</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="app">
+            <div class="header">
+                <h1>Split Better</h1>
+            </div>
+            <div class="app-body">
+                <div class="user-input-container">
+                    <input type="number" id="splitCount" placeholder="Head count">
+                    <button id="split">Split</button>
+                </div>
+                <div class="people-container"></div>
+                <button id="ballance" class="ballance-button global-button hidden">Balance Away</button>
+            </div>
+            <div class="split-ways-container hidden">
+                <h4>Individual Split amounts</h4>
+                <div class="split-by-person"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
