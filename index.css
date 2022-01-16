@@ -45,9 +45,9 @@ input[type="number"] {
 }
 
 .global-button {
-  background-color: #dce0e3;
+  background-color: #ea5f8e;
   border: none;
-  color: #3d434b;
+  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 2px;
@@ -95,11 +95,11 @@ input[type="number"] {
 }
 
 .user-input-container button {
-  background-color: #dce0e3;
+  background-color: #ea5f8e;
   border: none;
   height: 25px;
   width: 50px;
-  color: #3d434b;
+  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 2px;
@@ -134,7 +134,7 @@ input[type="number"] {
 }
 
 .ballance-button {
-  padding: 5px;
+  padding: 8px;
 }
 
 .split-ways-container {
