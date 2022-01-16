@@ -81,6 +81,7 @@ const personGenerator = (id) => {
 
 const renderSplit = (ballanceArr) => {
   const splitByPerson = document.querySelector(".split-by-person");
+  splitByPerson.innerHTML = "";
   if (ballanceArr.length > 0) {
     const fragment = document.createDocumentFragment();
     ballanceArr.forEach((item) => {
