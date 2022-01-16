@@ -58,6 +58,7 @@ const ballance = (data) => {
 
 split.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
+  peopleContainer.innerHTML = "";
   if (splitCount.value) {
     const fragment = document.createDocumentFragment();
     for (let i = 0; i < splitCount.value; i++) {
