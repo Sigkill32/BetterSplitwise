@@ -5,7 +5,6 @@ const grandTotal = document.getElementById("grandTotal");
 const splitCount = document.getElementById("splitCount");
 const peopleContainer = document.querySelector(".people-container");
 const ballanceButton = document.getElementById("ballance");
-const splitByPerson = document.querySelector(".split-by-person");
 
 let costPerHead = 0;
 
@@ -81,21 +80,26 @@ const personGenerator = (id) => {
 };
 
 const renderSplit = (ballanceArr) => {
-  const fragment = document.createDocumentFragment();
-  ballanceArr.forEach((item) => {
-    const sentence = `<span class="highlight">${
-      item.from
-    }</span> owes <span class="highlight">${
-      item.to
-    }</span> <span class="highlight">₹${
-      Math.round((item.bal + Number.EPSILON) * 100) / 100
-    }</span>`;
-    const p = document.createElement("p");
-    p.innerHTML = sentence;
-    p.className = "balance-item";
-    fragment.appendChild(p);
-  });
-  splitByPerson.appendChild(fragment);
+  const splitByPerson = document.querySelector(".split-by-person");
+  if (ballanceArr.length > 0) {
+    const fragment = document.createDocumentFragment();
+    ballanceArr.forEach((item) => {
+      const sentence = `<span class="highlight">${
+        item.from
+      }</span> owes <span class="highlight">${
+        item.to
+      }</span> <span class="highlight">₹${
+        Math.round((item.bal + Number.EPSILON) * 100) / 100
+      }</span>`;
+      const p = document.createElement("p");
+      p.innerHTML = sentence;
+      p.className = "balance-item";
+      fragment.appendChild(p);
+    });
+    splitByPerson.appendChild(fragment);
+  } else {
+    splitByPerson.innerHTML = `<span class="highlight">No one owes shit to anyone</span>`;
+  }
 };
 
 ballanceButton.addEventListener("click", () => {
