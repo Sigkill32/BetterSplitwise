@@ -3,7 +3,6 @@
 const split = document.getElementById("split");
 const grandTotal = document.getElementById("grandTotal");
 const splitCount = document.getElementById("splitCount");
-const peopleContainer = document.querySelector(".people-container");
 const ballanceButton = document.getElementById("ballance");
 
 let costPerHead = 0;
@@ -58,6 +57,7 @@ const ballance = (data) => {
 };
 
 split.addEventListener("click", () => {
+  const peopleContainer = document.querySelector(".people-container");
   if (splitCount.value) {
     const fragment = document.createDocumentFragment();
     for (let i = 0; i < splitCount.value; i++) {
