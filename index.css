@@ -155,3 +155,7 @@ input[type="number"] {
 .split-by-person .balance-item {
   margin-bottom: 8px;
 }
+
+.reset-button {
+  background-color: #cb4154;
+}
