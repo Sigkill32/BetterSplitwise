@@ -173,6 +173,7 @@ input[type="number"] {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
