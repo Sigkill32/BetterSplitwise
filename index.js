@@ -1,7 +1,6 @@
 "use strict";
 
 const split = document.getElementById("split");
-const splitCount = document.getElementById("splitCount");
 const ballanceButton = document.getElementById("ballance");
 
 let costPerHead = 0;
@@ -58,6 +57,7 @@ const ballance = (data) => {
 split.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
   const splitByPerson = document.querySelector(".split-by-person");
+  const splitCount = document.getElementById("splitCount");
   splitByPerson.innerHTML = "";
   peopleContainer.innerHTML = "";
   if (splitCount.value) {
@@ -106,6 +106,7 @@ const renderSplit = (ballanceArr) => {
 };
 
 ballanceButton.addEventListener("click", () => {
+  const splitCount = document.getElementById("splitCount");
   const data = [];
   for (let i = 0; i < splitCount.value; i++) {
     const name = document.getElementById(`name_${i}`).value || `Person${i + 1}`;
