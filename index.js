@@ -2,6 +2,7 @@
 
 const split = document.getElementById("split");
 const ballanceButton = document.getElementById("ballance");
+const resetButton = document.getElementById("reset");
 
 let costPerHead = 0;
 
@@ -67,7 +68,7 @@ split.addEventListener("click", () => {
       fragment.appendChild(div);
     }
     peopleContainer.appendChild(fragment);
-    ballanceButton.classList.remove("hidden");
+    document.querySelector(".split-action-buttons").classList.remove("hidden");
   } else {
     alert("Head count can't be empty");
   }
@@ -117,4 +118,15 @@ ballanceButton.addEventListener("click", () => {
   const ballanceArr = ballance(data);
   document.querySelector(".split-ways-container").classList.remove("hidden");
   renderSplit(ballanceArr);
+});
+
+resetButton.addEventListener("click", () => {
+  const peopleContainer = document.querySelector(".people-container");
+  const splitByPerson = document.querySelector(".split-by-person");
+  const splitCount = document.getElementById("splitCount");
+  document.querySelector(".split-ways-container").classList.add("hidden");
+  document.querySelector(".split-action-buttons").classList.add("hidden");
+  splitByPerson.innerHTML = "";
+  peopleContainer.innerHTML = "";
+  splitCount.value = "";
 });

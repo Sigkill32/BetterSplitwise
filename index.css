@@ -129,7 +129,7 @@ input[type="number"] {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .ballance-button {
@@ -158,4 +158,9 @@ input[type="number"] {
 
 .reset-button {
   background-color: #cb4154;
+}
+
+.split-action-buttons {
+  display: flex;
+  justify-content: space-between;
 }
