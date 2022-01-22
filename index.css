@@ -64,8 +64,6 @@ input[type="number"] {
   background-color: #3d434b;
   padding: 2em;
   min-height: 100vh;
-  min-width: 25em;
-  border-radius: 5px;
   width: 100%;
 }
 
@@ -128,7 +126,6 @@ input[type="number"] {
 .contribution {
   margin-bottom: 5px;
   width: 40%;
-  text-align: right;
 }
 
 .hidden {
