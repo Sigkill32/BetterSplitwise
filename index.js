@@ -139,15 +139,15 @@ closeInstruction.addEventListener("click", () => {
   document.querySelector(".app-usage-modal-container").classList.add("hidden");
 });
 
-dlReport.addEventListener("click", () => {
-  //experimental feature need to think. Disabled
-  const reportTitle = "Ballance Report";
-  const ballanceDetails = document.querySelector(".split-by-person");
-  const printWindow = window.open("", "", "height=400,width=800");
-  printWindow.document.write(`<html><head><title>${reportTitle}</title>`);
-  printWindow.document.write("</head><body >");
-  printWindow.document.write(ballanceDetails.innerHTML);
-  printWindow.document.write("</body></html>");
-  printWindow.document.close();
-  printWindow.print();
-});
+//  ***** Feature Disabled for now *****************
+// dlReport.addEventListener("click", () => {
+//   const reportTitle = "Ballance Report";
+//   const ballanceDetails = document.querySelector(".split-by-person");
+//   const printWindow = window.open("", "", "height=400,width=800");
+//   printWindow.document.write(`<html><head><title>${reportTitle}</title>`);
+//   printWindow.document.write("</head><body >");
+//   printWindow.document.write(ballanceDetails.innerHTML);
+//   printWindow.document.write("</body></html>");
+//   printWindow.document.close();
+//   printWindow.print();
+// });
