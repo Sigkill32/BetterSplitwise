@@ -3,6 +3,9 @@
 const split = document.getElementById("split");
 const ballanceButton = document.getElementById("ballance");
 const resetButton = document.getElementById("reset");
+const closeInstruction = document.querySelector(
+  ".instruction-modal-close-button"
+);
 
 let costPerHead = 0;
 
@@ -129,4 +132,8 @@ resetButton.addEventListener("click", () => {
   splitByPerson.innerHTML = "";
   peopleContainer.innerHTML = "";
   splitCount.value = "";
+});
+
+closeInstruction.addEventListener("click", () => {
+  document.querySelector(".app-usage-modal-container").classList.add("hidden");
 });
