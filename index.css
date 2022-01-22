@@ -219,3 +219,7 @@ input[type="number"] {
   border-radius: 5px;
   font-weight: bold;
 }
+
+.download-report {
+  padding: 0 2px;
+}
