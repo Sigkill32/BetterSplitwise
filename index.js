@@ -6,7 +6,7 @@ const resetButton = document.getElementById("reset");
 const closeInstruction = document.querySelector(
   ".instruction-modal-close-button"
 );
-const dlReport = document.querySelector(".download-report");
+// const dlReport = document.querySelector(".download-report");
 
 let costPerHead = 0;
 
