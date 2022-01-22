@@ -1,7 +1,6 @@
 "use strict";
 
 const split = document.getElementById("split");
-const grandTotal = document.getElementById("grandTotal");
 const splitCount = document.getElementById("splitCount");
 const ballanceButton = document.getElementById("ballance");
 
