@@ -9,7 +9,7 @@
     "webpack-cli": "^4.7.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js --watch",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
