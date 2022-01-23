@@ -1,0 +1,25 @@
+{
+  "name": "bettersplitwise",
+  "version": "1.0.0",
+  "description": "Are you one of those people who doesn't want to install a whole fuckin' app with signup and shit just to figure out how much you need to pay your friends or how much they owe you ? Then this app is for you.\r Introducing Better split - A no hassle bill splitting app, way better than Splitwise. Ergo, BetterSplit",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sigkill32/BetterSplitwise.git"
+  },
+  "author": "Manoj Bhat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sigkill32/BetterSplitwise/issues"
+  },
+  "homepage": "https://github.com/Sigkill32/BetterSplitwise#readme"
+}
