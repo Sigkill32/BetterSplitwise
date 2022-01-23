@@ -158,7 +158,7 @@ input[type="number"] {
 }
 
 .reset-button {
-  background-color: #ff0000;
+  background-color: #dc143c;
   width: 45%;
 }
 
@@ -202,7 +202,7 @@ input[type="number"] {
 }
 
 .negetive-highlight {
-  color: #ff0000;
+  color: #dc143c;
   font-weight: bold;
 }
 
