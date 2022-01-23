@@ -47,9 +47,7 @@ const renderSplit = (ballanceArr) => {
     ballanceArr.forEach((item) => {
       const sentence = `<span class="highlight">${
         item.from
-      }</span> owes <span class="highlight">${
-        item.to
-      }</span> <span class="highlight">₹${
+      }</span> owes <span class="highlight">${item.to}</span> &nbsp;<span>₹${
         Math.round((item.bal + Number.EPSILON) * 100) / 100
       }</span>`;
       const p = document.createElement("p");
