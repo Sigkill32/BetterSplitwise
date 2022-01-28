@@ -10,8 +10,6 @@ const closeInstruction = document.querySelector(
 );
 // const dlReport = document.querySelector(".download-report");
 
-let costPerHead = 0;
-
 split.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
   const splitByPerson = document.querySelector(".split-by-person");
