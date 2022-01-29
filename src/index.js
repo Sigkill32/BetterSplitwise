@@ -33,7 +33,17 @@ const personGenerator = (id) => {
   const div = document.createElement("div");
   div.className = "person-container";
   div.innerHTML = `<input type="text" placeholder="Name" id="name_${id}" class="global-input name">
-      <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">`;
+      <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">
+      <button class="calc-button">
+        <div class="calc-symbol-row">
+          <div class="calc-button-symbol">+</div>
+          <div class="calc-button-symbol">-</div>
+        </div>
+        <div class="calc-symbol-row">
+          <div class="calc-button-symbol">x</div>
+          <div class="calc-button-symbol">=</div>
+        </div>
+      </button>`;
   return div;
 };
 
