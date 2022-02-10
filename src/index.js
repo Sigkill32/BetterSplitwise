@@ -32,18 +32,25 @@ split.addEventListener("click", () => {
 const personGenerator = (id) => {
   const div = document.createElement("div");
   div.className = "person-container";
+  /*
+
+  Future improvements
+
+  const whitCalc = `<input type="text" placeholder="Name" id="name_${id}" class="global-input name">
+  <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">
+  <button class="calc-button">
+    <div class="calc-symbol-row">
+      <div class="calc-button-symbol">+</div>
+      <div class="calc-button-symbol">-</div>
+    </div>
+    <div class="calc-symbol-row">
+      <div class="calc-button-symbol">x</div>
+      <div class="calc-button-symbol">=</div>
+    </div>
+  </button>`;
+  */
   div.innerHTML = `<input type="text" placeholder="Name" id="name_${id}" class="global-input name">
-      <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">
-      <button class="calc-button">
-        <div class="calc-symbol-row">
-          <div class="calc-button-symbol">+</div>
-          <div class="calc-button-symbol">-</div>
-        </div>
-        <div class="calc-symbol-row">
-          <div class="calc-button-symbol">x</div>
-          <div class="calc-button-symbol">=</div>
-        </div>
-      </button>`;
+  <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">`;
   return div;
 };
 
