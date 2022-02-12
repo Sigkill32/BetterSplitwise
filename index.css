@@ -189,7 +189,7 @@ input[type="number"] {
 
 .instruction-header-heading {
   color: #000;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .instruction-list-item {
@@ -246,7 +246,7 @@ input[type="number"] {
 }
 
 .instruction-item {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .instruction-description-container {
