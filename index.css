@@ -145,7 +145,6 @@ input[type="number"] {
 
 .split-by-person {
   margin-top: 10px;
-  height: 15vh;
   overflow: auto;
 }
 
@@ -261,6 +260,8 @@ input[type="number"] {
   padding: 1em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
+  max-height: 40%;
+  animation: slide-up 0.1s;
 }
 
 .debt-header {
@@ -274,15 +275,27 @@ input[type="number"] {
 
 .report-modal-close {
   background-color: transparent;
-  width: 2em;
+  width: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
 }
 
 .report-modal-close p {
   color: #000;
-  font-size: 1.5em;
+  font-size: 3em;
+}
+
+@keyframes slide-up {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: auto;
+  }
 }
