@@ -143,12 +143,6 @@ input[type="number"] {
   width: 45%;
 }
 
-.split-ways-container {
-  border-top: 1px solid black;
-  margin-top: 20px;
-  padding: 10px 0;
-}
-
 .split-by-person {
   margin-top: 10px;
   height: 15vh;
@@ -161,6 +155,7 @@ input[type="number"] {
 
 .split-by-person .balance-item {
   margin-bottom: 8px;
+  color: #000;
 }
 
 .reset-button {
@@ -256,4 +251,18 @@ input[type="number"] {
 
 .instruction-description-container {
   font-size: 0.8em;
+}
+
+.report-modal-container {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  bottom: 0;
+  padding: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.debt-header h4 {
+  color: #000;
 }
