@@ -110,7 +110,7 @@ input[type="number"] {
 }
 
 .people-container {
-  max-height: 45vh;
+  max-height: 65vh;
   overflow: auto;
   margin-bottom: 10px;
   margin-top: 20px;
