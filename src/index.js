@@ -8,6 +8,7 @@ const resetButton = document.getElementById("reset");
 const closeInstruction = document.querySelector(
   ".instruction-modal-close-button"
 );
+const reportClose = document.getElementById("report-close-btn");
 // const dlReport = document.querySelector(".download-report");
 
 split.addEventListener("click", () => {
@@ -103,6 +104,10 @@ resetButton.addEventListener("click", () => {
 
 closeInstruction.addEventListener("click", () => {
   document.querySelector(".app-usage-modal-container").classList.add("hidden");
+});
+
+reportClose.addEventListener("click", () => {
+  document.querySelector(".split-ways-container").classList.add("hidden");
 });
 
 //  ***** Feature Disabled for now *****************
