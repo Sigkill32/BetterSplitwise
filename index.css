@@ -263,6 +263,26 @@ input[type="number"] {
   border-top-right-radius: 1em;
 }
 
+.debt-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .debt-header h4 {
   color: #000;
+}
+
+.report-modal-close {
+  background-color: transparent;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.report-modal-close p {
+  color: #000;
+  font-size: 1.5em;
 }
