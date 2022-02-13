@@ -146,6 +146,9 @@ input[type="number"] {
 .split-by-person {
   margin-top: 10px;
   overflow: auto;
+  max-height: 45vh;
+  padding: 0 1em;
+  margin-top: 1.5em;
 }
 
 .highlight {
@@ -257,16 +260,21 @@ input[type="number"] {
   background-color: #fff;
   width: 100%;
   bottom: 0;
-  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 1em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  max-height: 40%;
-  animation: slide-up 0.1s;
+  max-height: 55vh;
+  animation-duration: 0.5s;
+  will-change: transform, height;
+  transition: transform 0.2s linear, opacity 0.2s linear;
 }
 
 .debt-header {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 0 32px #00000029;
+  padding: 1em;
 }
 
 .debt-header h4 {
@@ -288,14 +296,4 @@ input[type="number"] {
 .report-modal-close p {
   color: #000;
   font-size: 3em;
-}
-
-@keyframes slide-up {
-  from {
-    height: 0;
-  }
-
-  to {
-    height: auto;
-  }
 }
