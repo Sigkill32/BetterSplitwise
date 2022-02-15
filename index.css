@@ -257,3 +257,8 @@ input[type="number"] {
 .instruction-description-container {
   font-size: 0.8em;
 }
+
+.additional-info-description {
+  margin-top: 0.5em;
+  color: #000;
+}
