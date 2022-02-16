@@ -1,6 +1,6 @@
 # BetterSplit
 
-Are you one of those people who doesn't want to install a whole fuckin' app with signup and shit just to figure out how much you need to pay your friends or how much they owe you ? Then this app is for you.
+Are you one of those people who doesn't want to install a whole fuckin' app with signup and shit just to figure out how much you need to pay your friends or how much they owe you? Then this app is for you.
 Introducing Better split - A no hassle bill splitting app, way better than Splitwise. Ergo, BetterSplit
 
 ## How to use
@@ -11,6 +11,6 @@ Introducing Better split - A no hassle bill splitting app, way better than Split
 - You can always hit "RESET" if shit goes south
 - If you're too lazy to enter participant names, you can just leave 'em blank and they'll be named PersonX where x = {1,2..n}
 
-## Why the dist folder ?
+## Why the dist folder?
 
 'cause the app's hosted using netlify's free tier which has a limit on monthly build time. With the build file already present, I'm gon' save all that build time and publish without a worry in the world.
