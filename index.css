@@ -201,11 +201,14 @@ input[type="number"] {
 .instruction-list-item {
   margin-bottom: 0.5em;
   font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 .positive-highlight {
-  color: #ffdb58;
+  background-color: #ffdb58;
+  padding: 0.3em 0.6em;
   font-weight: bold;
+  border-radius: 0.2em;
 }
 
 .negetive-highlight {
