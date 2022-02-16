@@ -60,6 +60,7 @@ input[type="number"] {
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 2px;
+  outline: hidden;
 }
 
 .app-container {
@@ -210,6 +211,7 @@ input[type="number"] {
   font-weight: bold;
   border-radius: 0.2em;
   font-size: 0.8em;
+  display: inline-block;
 }
 
 .negetive-highlight {
@@ -219,6 +221,7 @@ input[type="number"] {
   border-radius: 0.2em;
   color: #fff;
   font-size: 0.8em;
+  display: inline-block;
 }
 
 .modal-close-button-container {
