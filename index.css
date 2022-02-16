@@ -265,8 +265,7 @@ input[type="number"] {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   max-height: 55vh;
-  animation-duration: 0.5s;
-  will-change: transform, height;
+  animation: slide-up 0.1s;
   transition: transform 0.2s linear, opacity 0.2s linear;
 }
 
@@ -300,4 +299,13 @@ input[type="number"] {
 .additional-info-description {
   margin-top: 0.5em;
   color: #000;
+}
+
+@keyframes slide-up {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: auto;
+  }
 }
