@@ -12,4 +12,4 @@ Introducing Better split - A no hassle bill splitting app, way better than Split
 
 ## Why the dist folder ?
 
-'cause it's hosted on netlify free tier which has a limit on monthly build time. So I'm gon' save all that build time and publish without a worry in the world.
+'cause the app's hosted using netlify's free tier which has a limit on monthly build time. With the build file already present, I'm gon' save all that build time and publish without a worry in the world.
