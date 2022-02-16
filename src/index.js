@@ -9,6 +9,7 @@ const closeInstruction = document.querySelector(
   ".instruction-modal-close-button"
 );
 const reportClose = document.getElementById("report-close-btn");
+const splitReportModal = document.querySelector(".split-ways-container");
 // const dlReport = document.querySelector(".download-report");
 
 split.addEventListener("click", () => {
@@ -107,6 +108,10 @@ closeInstruction.addEventListener("click", () => {
 });
 
 reportClose.addEventListener("click", () => {
+  document.querySelector(".split-ways-container").classList.add("hidden");
+});
+
+splitReportModal.addEventListener("click", () => {
   document.querySelector(".split-ways-container").classList.add("hidden");
 });
 
