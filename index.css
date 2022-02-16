@@ -316,6 +316,11 @@ input[type="number"] {
   color: #000;
 }
 
+.nobg-negetive-highlight {
+  color: #9158aa;
+  font-weight: bold;
+}
+
 @keyframes slide-up {
   from {
     max-height: 0;
