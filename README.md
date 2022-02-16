@@ -7,7 +7,7 @@ Introducing Better split - A simple to use, lightweight, no BS bill splitting ap
 
 - Visit: https://bettersplit.netlify.app/
 - Enter head count and hit "GO"
-- Enter how much each participant spent and "BALLANCE AWAY"
+- Enter how much each participant spent and "BALANCE AWAY"
 - You can always hit "RESET" if shit goes south
 - If you're too lazy to enter participant names, you can just leave 'em blank and they'll be named PersonX where x = {1,2..n}
 
