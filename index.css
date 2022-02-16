@@ -209,11 +209,16 @@ input[type="number"] {
   padding: 0.3em 0.6em;
   font-weight: bold;
   border-radius: 0.2em;
+  font-size: 0.8em;
 }
 
 .negetive-highlight {
-  color: #9158aa;
+  background-color: #9158aa;
   font-weight: bold;
+  padding: 0.3em 0.6em;
+  border-radius: 0.2em;
+  color: #fff;
+  font-size: 0.8em;
 }
 
 .modal-close-button-container {
