@@ -1,7 +1,7 @@
 # BetterSplit
 
 Are you one of those people who doesn't want to install a whole fuckin' app with signup and shit just to figure out how much you need to pay your friends or how much they owe you? Then this app is for you.
-Introducing Better split - A no hassle bill splitting app, way better than Splitwise. Ergo, BetterSplit
+Introducing Better split - A simple to use, lightweight, no BS bill splitting app to help your lazy ass figure out how much you owe someone or how much someone owes you or both
 
 ## How to use
 
