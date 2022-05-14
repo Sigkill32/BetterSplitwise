@@ -391,6 +391,18 @@ input[type="number"] {
   border-radius: 1em;
 }
 
+.add-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-row-button {
+  color: #ffdb58;
+  background-color: transparent;
+  border: none;
+  font-size: 0.8em;
+}
+
 @keyframes slide-up {
   from {
     max-height: 0;

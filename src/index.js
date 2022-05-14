@@ -37,6 +37,13 @@ function handlePersonChange(e, id) {
   }
 }
 
+function addRow() {
+  const div = document.createElement("div");
+  div.className = "add-row";
+  div.innerHTML = `<button class="add-row-button">+ ADD ROW</button>`;
+  return div;
+}
+
 split.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
   const splitByPerson = document.querySelector(".split-by-person");
@@ -51,6 +58,8 @@ split.addEventListener("click", () => {
       });
       fragment.appendChild(div);
     }
+    const addRowButton = addRow();
+    fragment.appendChild(addRowButton);
     peopleContainer.appendChild(fragment);
     document.querySelector(".split-action-buttons").classList.remove("hidden");
   } else {
