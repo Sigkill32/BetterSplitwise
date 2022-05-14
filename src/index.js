@@ -20,13 +20,22 @@ const handleHeadCountChange = (() => {
     const { value } = e.target;
     if (value.length === 0) headCountText.classList.add("hidden");
     else {
-      if (headCountText.className.split.length > 0)
+      if (headCountText.className.split.length > 1)
         headCountText.classList.remove("hidden");
     }
   };
 })();
 
 splitCount.addEventListener("input", handleHeadCountChange);
+
+function handlePersonChange(e, id) {
+  const { value } = e.target;
+  const label = document.getElementById(id);
+  if (value.length === 0) label.classList.add("hidden");
+  else {
+    if (label.className.split.length > 1) label.classList.remove("hidden");
+  }
+}
 
 split.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
@@ -37,6 +46,9 @@ split.addEventListener("click", () => {
     const fragment = document.createDocumentFragment();
     for (let i = 0; i < splitCount.value; i++) {
       const div = personGenerator(i);
+      div.addEventListener("input", (e) => {
+        handlePersonChange(e, `label_${e.target.id}`);
+      });
       fragment.appendChild(div);
     }
     peopleContainer.appendChild(fragment);
@@ -49,25 +61,14 @@ split.addEventListener("click", () => {
 const personGenerator = (id) => {
   const div = document.createElement("div");
   div.className = "person-container";
-  /*
-
-  Future improvements
-
-  const whitCalc = `<input type="text" placeholder="Name" id="name_${id}" class="global-input name">
-  <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">
-  <button class="calc-button">
-    <div class="calc-symbol-row">
-      <div class="calc-button-symbol">+</div>
-      <div class="calc-button-symbol">-</div>
-    </div>
-    <div class="calc-symbol-row">
-      <div class="calc-button-symbol">x</div>
-      <div class="calc-button-symbol">=</div>
-    </div>
-  </button>`;
-  */
-  div.innerHTML = `<input type="text" placeholder="Name" id="name_${id}" class="global-input name">
-  <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">`;
+  div.innerHTML = `<div class="name-input">
+    <div class="name-label hidden" id="label_name_${id}">Name</div>
+    <input type="text" placeholder="Name" id="name_${id}" class="global-input name">
+  </div>
+  <div class="contribution-input">
+  <div class="contribution-label hidden" id="label_contribution_${id}">Contribution</div>
+    <input type="number" placeholder="Contribution" id="contribution_${id}" class="global-input contribution">
+  </div>`;
   return div;
 };
 

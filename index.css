@@ -46,11 +46,11 @@ input[type="number"] {
 }
 
 .global-input {
-  background-color: black;
+  background-color: transparent;
   border: none;
   outline: none;
   color: #dce0e3;
-  padding: 1em;
+  padding: 0.5em 1em;
   border-radius: 5px;
 }
 
@@ -119,6 +119,7 @@ input[type="number"] {
   max-height: 65vh;
   overflow: auto;
   margin-top: 20px;
+  padding-top: 1em;
 }
 
 .person-container {
@@ -130,13 +131,17 @@ input[type="number"] {
 }
 
 .name {
-  margin-bottom: 5px;
-  width: 50%;
+  margin: 0.5em 0;
+  width: 100%;
+  color: #fff;
+  border-right: 1px solid #000;
+  border-radius: 0;
 }
 
 .contribution {
-  margin-bottom: 5px;
-  width: 45%;
+  margin: 0.5em 0;
+  width: 100%;
+  color: #fff;
 }
 
 .hidden {
@@ -331,6 +336,48 @@ input[type="number"] {
   background-color: #3d434b;
   padding: 0.2em 0.5em;
   left: 2em;
+  border-radius: 1em;
+}
+
+.name-input {
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 0.3em;
+  width: 50%;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.name-label {
+  color: #000;
+  font-size: 0.8em;
+  position: absolute;
+  top: -0.8em;
+  background-color: #3d434b;
+  padding: 0.2em 0.5em;
+  left: 1em;
+  border-radius: 1em;
+}
+
+.contribution-input {
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 0.3em;
+  width: 50%;
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.contribution-label {
+  color: #000;
+  font-size: 0.8em;
+  position: absolute;
+  top: -0.8em;
+  background-color: #3d434b;
+  padding: 0.2em 0.5em;
+  left: 1em;
   border-radius: 1em;
 }
 
