@@ -41,8 +41,24 @@ function addRow() {
   const div = document.createElement("div");
   div.className = "add-row";
   div.innerHTML = `<button class="add-row-button">+ ADD ROW</button>`;
+  div.addEventListener("click", handleAddRowClick);
   return div;
 }
+
+const handleAddRowClick = (() => {
+  const peopleContainer = document.querySelector(".people-container");
+  return function (e) {
+    if (e.target.className === "add-row-button") {
+      const button = e.target;
+      button.parentNode.removeChild(button);
+      const div = personGenerator(splitCount.value);
+      const addRowButton = addRow();
+      peopleContainer.appendChild(div);
+      peopleContainer.appendChild(addRowButton);
+      splitCount.value = parseInt(splitCount.value) + 1;
+    }
+  };
+})();
 
 split.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
