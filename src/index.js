@@ -10,12 +10,27 @@ const closeInstruction = document.querySelector(
 );
 const reportClose = document.getElementById("report-close-btn");
 const splitReportModal = document.querySelector(".split-ways-container");
+const splitCount = document.getElementById("splitCount");
+const headCountText = document.querySelector(".head-count-text");
 // const dlReport = document.querySelector(".download-report");
+
+const handleHeadCountChange = (() => {
+  const headCountText = document.querySelector(".head-count-text");
+  return function (e) {
+    const { value } = e.target;
+    if (value.length === 0) headCountText.classList.add("hidden");
+    else {
+      if (headCountText.className.split.length > 0)
+        headCountText.classList.remove("hidden");
+    }
+  };
+})();
+
+splitCount.addEventListener("input", handleHeadCountChange);
 
 split.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
   const splitByPerson = document.querySelector(".split-by-person");
-  const splitCount = document.getElementById("splitCount");
   splitByPerson.innerHTML = "";
   peopleContainer.innerHTML = "";
   if (splitCount.value) {
@@ -79,7 +94,6 @@ const renderSplit = (ballanceArr) => {
 };
 
 ballanceButton.addEventListener("click", () => {
-  const splitCount = document.getElementById("splitCount");
   const data = [];
   for (let i = 0; i < splitCount.value; i++) {
     const name = document.getElementById(`name_${i}`).value || `Person${i + 1}`;
@@ -95,7 +109,6 @@ ballanceButton.addEventListener("click", () => {
 resetButton.addEventListener("click", () => {
   const peopleContainer = document.querySelector(".people-container");
   const splitByPerson = document.querySelector(".split-by-person");
-  const splitCount = document.getElementById("splitCount");
   document.querySelector(".split-ways-container").classList.add("hidden");
   document.querySelector(".split-action-buttons").classList.add("hidden");
   splitByPerson.innerHTML = "";
