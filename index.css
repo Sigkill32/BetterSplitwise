@@ -121,6 +121,7 @@ input[type="number"] {
   overflow: auto;
   margin-top: 20px;
   padding-top: 1em;
+  padding-bottom: 5em;
 }
 
 .person-container {
