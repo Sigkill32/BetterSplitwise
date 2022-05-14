@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html,
@@ -19,14 +18,16 @@ body {
 }
 
 .header-tagline {
-  font-size: 0.6em;
+  font-size: 0.8em;
   margin-top: 0.2em;
+  color: #9fa1a4;
 }
 
 h1,
 h4,
 p {
   color: #dce0e3;
+  letter-spacing: 0.1em;
 }
 
 button {

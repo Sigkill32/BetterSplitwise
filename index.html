@@ -1,88 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free, easy to use, no hassle bill splitting app that doesn't require complicated set up like creating an account.
-        Just open the app and split your bill in seconds">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free, easy to use, no hassle bill splitting app that doesn't require complicated set up like creating an account.
+        Just open the app and split your bill in seconds"
+    />
     <title>Split Better</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<body>
+  <body>
     <div class="app-container">
-        <div class="app">
-            <div class="header">
-                <h1>Split Better</h1>
-                <p class="header-tagline">Split your bills in seconds without rackin' your brain</p>
-            </div>
-            <div class="app-body">
-                <div class="user-input-container">
-                    <div class="head-count-text hidden">Head Count</div>
-                    <input type="number" id="splitCount" placeholder="Head count">
-                    <button id="split">Go</button>
-                </div>
-                <div class="people-container"></div>
-                <div class="split-action-buttons hidden">
-                    <button id="ballance" class="ballance-button global-button">Balance Away</button>
-                    <button id="reset" class="ballance-button reset-button global-button">Reset</button>
-                </div>
-            </div>
+      <div class="app">
+        <div class="header">
+          <h1>SPLIT BETTER</h1>
+          <p class="header-tagline">
+            Split your bills in seconds without rackin' your brain
+          </p>
         </div>
+        <div class="app-body">
+          <div class="user-input-container">
+            <div class="head-count-text hidden">Head Count</div>
+            <input type="number" id="splitCount" placeholder="Head count" />
+            <button id="split">Go</button>
+          </div>
+          <div class="people-container"></div>
+          <div class="split-action-buttons hidden">
+            <button id="ballance" class="ballance-button global-button">
+              Balance Away
+            </button>
+            <button
+              id="reset"
+              class="ballance-button reset-button global-button"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="app-modal-backdrop app-usage-modal-container hidden">
-        <div class="app-usage-modal">
-            <div class="instruction-item">
-                <div class="instruction-header">
-                    <h4 class="instruction-header-heading">Dafq is BetterSplit anyway?</h4>
-                    <div class="instruction-description-container">
-                        A simple to use, lightweight, no BS bill splitting app to help your lazy ass figure out how much
-                        you owe someone or how much someone owes you or both
-                        <p class="additional-info-description">PS: The app looks best on mobile screens</p>
-                    </div>
-                </div>
+      <div class="app-usage-modal">
+        <div class="instruction-item">
+          <div class="instruction-header">
+            <h4 class="instruction-header-heading">
+              Dafq is BetterSplit anyway?
+            </h4>
+            <div class="instruction-description-container">
+              A simple to use, lightweight, no BS bill splitting app to help
+              your lazy ass figure out how much you owe someone or how much
+              someone owes you or both
+              <p class="additional-info-description">
+                PS: The app looks best on mobile screens
+              </p>
             </div>
-            <div>
-                <div class="instruction-header">
-                    <h4 class="instruction-header-heading">How to use</h4>
-                    <div class="instruction-list-continer">
-                        <ul class="instruction-list">
-                            <li class="instruction-list-item">Enter head count and hit <span
-                                    class="positive-highlight">GO</span></li>
-                            <li class="instruction-list-item">Enter how much each participant spent and <span
-                                    class="positive-highlight">BALANCE
-                                    AWAY</span></li>
-                            <li class="instruction-list-item">You can always hit <span
-                                    class="negetive-highlight">RESET</span>
-                                if shit goes south</li>
-                            <li class="instruction-list-item">If you're too lazy to enter participant names, you can
-                                just
-                                leave 'em blank and they'll be
-                                named <span class="nobg-negetive-highlight">PersonX</span> where x = {1,2..n}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-close-button-container"><button class="instruction-modal-close-button">Aaight, take me to
-                    the app already!!</button>
-            </div>
+          </div>
         </div>
+        <div>
+          <div class="instruction-header">
+            <h4 class="instruction-header-heading">How to use</h4>
+            <div class="instruction-list-continer">
+              <ul class="instruction-list">
+                <li class="instruction-list-item">
+                  Enter head count and hit
+                  <span class="positive-highlight">GO</span>
+                </li>
+                <li class="instruction-list-item">
+                  Enter how much each participant spent and
+                  <span class="positive-highlight">BALANCE AWAY</span>
+                </li>
+                <li class="instruction-list-item">
+                  You can always hit
+                  <span class="negetive-highlight">RESET</span> if shit goes
+                  south
+                </li>
+                <li class="instruction-list-item">
+                  If you're too lazy to enter participant names, you can just
+                  leave 'em blank and they'll be named
+                  <span class="nobg-negetive-highlight">PersonX</span> where x =
+                  {1,2..n}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-close-button-container">
+          <button class="instruction-modal-close-button">
+            Aaight, take me to the app already!!
+          </button>
+        </div>
+      </div>
     </div>
     <div class="app-modal-backdrop split-ways-container hidden">
-        <div class="report-modal-container">
-            <button class="report-modal-close" id="report-close-btn">
-                <p>×</p>
-            </button>
-            <div class="debt-header">
-                <h4>Split Report</h4>
-            </div>
-            <div class="split-by-person"></div>
-            <!-- <button class="download-report">Download Report</button> -->
+      <div class="report-modal-container">
+        <button class="report-modal-close" id="report-close-btn">
+          <p>×</p>
+        </button>
+        <div class="debt-header">
+          <h4>Split Report</h4>
         </div>
+        <div class="split-by-person"></div>
+        <!-- <button class="download-report">Download Report</button> -->
+      </div>
     </div>
     <script src="./dist/main.js" defer></script>
-</body>
-
+  </body>
 </html>
