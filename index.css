@@ -57,8 +57,8 @@ input[type="number"] {
 
 .global-button {
   background-color: #ffdb58;
-  border: none;
   font-weight: bold;
+  border: none;
   text-transform: uppercase;
   border-radius: 2px;
   outline: hidden;
@@ -150,8 +150,9 @@ input[type="number"] {
 }
 
 .ballance-button {
-  padding: 8px;
+  padding: 1.2em;
   width: 45%;
+  letter-spacing: 0.1em;
 }
 
 .split-by-person {
@@ -180,6 +181,13 @@ input[type="number"] {
 .split-action-buttons {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #313338;
+  padding: 1.5em;
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 .app-modal-backdrop {
